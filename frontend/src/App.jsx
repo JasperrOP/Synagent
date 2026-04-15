@@ -208,7 +208,7 @@ export default function App() {
     setIsLoading(true);
 
     try {
-      const res = await fetch('//synagent-2cjs.onrender.com/api/research', {
+      const res = await fetch('https://synagent-2cjs.onrender.com/api/research', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: userMessage.content }),
